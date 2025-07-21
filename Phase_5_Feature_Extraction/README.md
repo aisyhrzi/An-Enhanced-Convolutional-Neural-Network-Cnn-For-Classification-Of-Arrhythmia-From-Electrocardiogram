@@ -20,8 +20,7 @@ This phase transforms each ECG segment into a time-frequency image (scalogram) u
 
 Below is an example of a balanced scalogram segment:
 
-balanced_scalogram_segment_1.png
-
+https://github.com/aisyhrzi/An-Enhanced-Convolutional-Neural-Network-Cnn-For-Classification-Of-Arrhythmia-From-Electrocardiogram/blob/1e95b695c04d46c0fb379e291e0b444c3f89253e/balanced_scalogram_segment_1.png
 ---
 
 *These images are ready to be used for CNN model training in the next phase.*
