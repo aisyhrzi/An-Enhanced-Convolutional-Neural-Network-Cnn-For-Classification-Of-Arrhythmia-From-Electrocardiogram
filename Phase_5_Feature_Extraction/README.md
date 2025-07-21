@@ -19,6 +19,8 @@ This phase transforms each ECG segment into a time-frequency image (scalogram) u
 - PNG scalogram images, resized to 224x224, stored by class.
 
 Below is an example of a balanced scalogram segment:
+
+
 ![Balanced Scalogram Segment](https://github.com/aisyhrzi/An-Enhanced-Convolutional-Neural-Network-Cnn-For-Classification-Of-Arrhythmia-From-Electrocardiogram/blob/1e95b695c04d46c0fb379e291e0b444c3f89253e/balanced_scalogram_segment_1.png?raw=true)
 
 ---
