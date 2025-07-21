@@ -38,11 +38,15 @@ Evaluation: Test on unseen data, compare performance with benchmarks
 ## 🚀 Results
 
 A comparative analysis was conducted to evaluate the overall performance metrics of three models 
+
 M1 (Mohonta et al., 2022), 
 
-M2 (Custom TensorFlow CNN)
+M2 (Custom TensorFlow CNN),
 
 M3 (AlexNet architecture)
+
+    ![Balanced Scalogram Segment](https://github.com/aisyhrzi/An-Enhanced-Convolutional-Neural-Network-Cnn-For-Classification-Of-Arrhythmia-From-Electrocardiogram/blob/1e95b695c04d46c0fb379e291e0b444c3f89253e/Picture1.jpeg?raw=true)
+
 
 
 
