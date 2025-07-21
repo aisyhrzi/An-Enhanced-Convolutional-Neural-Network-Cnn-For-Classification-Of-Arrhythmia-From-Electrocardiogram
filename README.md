@@ -45,5 +45,6 @@ The model outperformed classic architectures (like AlexNet) on this dataset
 
 Accurate and automated arrhythmia detection can help doctors diagnose patients faster and more reliably. This project shows how deep learning and bioinformatics can support real healthcare solutions.
 
-## 📚 References :
-MIT-BIH Arrhythmia Database: https://physionet.org/content/mitdb/1.0.0/
+## 📚 
+Due to large file size, the ECG data is not stored directly in this repository.
+Please download the dataset from [PhysioNet MIT-BIH Database](https://physionet.org/content/mitdb/1.0.0/)
