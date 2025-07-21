@@ -1,1 +1,24 @@
+# Phase 2: Feature Extraction (Scalogram Generation)
+
+This phase transforms each ECG segment into a time-frequency image (scalogram) using Continuous Wavelet Transform (CWT), and then resizes the images for use in deep learning models.
+
+## Steps
+
+1. **Scalogram Generation**
+   - Each denoised, segmented ECG signal is converted into a 2D image (scalogram) using CWT.
+   - Scalograms are saved as PNG files in class-specific folders (`0`, `1`, `2`, `3`, `4`).
+
+2. **Image Preprocessing & Resizing**
+   - All scalogram images are resized to 224x224 pixels to match the input size requirements of common CNN models (e.g., AlexNet, VGG).
+   - Images are organized in folders by class.
+
+## Input
+- Balanced and labeled ECG data (CSV from Phase 3).
+
+## Output
+- PNG scalogram images, resized to 224x224, stored by class.
+
+---
+
+*These images are ready to be used for CNN model training in the next phase.*
 
