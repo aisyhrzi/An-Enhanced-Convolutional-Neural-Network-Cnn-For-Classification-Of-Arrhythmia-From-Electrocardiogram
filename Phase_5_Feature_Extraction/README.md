@@ -20,7 +20,7 @@ This phase transforms each ECG segment into a time-frequency image (scalogram) u
 
 Below is an example of a balanced scalogram segment:
 
-![Balanced Scalogram Segment Example](balanced/balanced_scalogram_segment_1.png)
+balanced_scalogram_segment_1.png
 
 ---
 
