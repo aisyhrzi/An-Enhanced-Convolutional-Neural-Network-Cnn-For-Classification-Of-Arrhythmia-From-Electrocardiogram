@@ -37,9 +37,14 @@ Evaluation: Test on unseen data, compare performance with benchmarks
 
 ## 🚀 Results
 
-Highest accuracy: 99.92% (using SMOTEENN)
+A comparative analysis was conducted to evaluate the overall performance metrics of three models 
+M1 (Mohonta et al., 2022), 
 
-The model outperformed classic architectures (like AlexNet) on this dataset
+M2 (Custom TensorFlow CNN)
+
+M3 (AlexNet architecture)
+
+
 
 ## 🏥 Why It Matters
 
