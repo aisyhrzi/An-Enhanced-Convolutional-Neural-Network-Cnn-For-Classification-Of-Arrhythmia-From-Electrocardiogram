@@ -45,7 +45,7 @@ M2 (Custom TensorFlow CNN),
 
 M3 (AlexNet architecture)
 
-    ![Picture1](https://github.com/aisyhrzi/An-Enhanced-Convolutional-Neural-Network-Cnn-For-Classification-Of-Arrhythmia-From-Electrocardiogram/Picture1.jpg?raw=true)
+![Picture1](https://github.com/aisyhrzi/An-Enhanced-Convolutional-Neural-Network-Cnn-For-Classification-Of-Arrhythmia-From-Electrocardiogram/blob/main/Picture1.jpg?raw=true)
 
 
 
