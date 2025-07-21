@@ -18,6 +18,10 @@ This phase transforms each ECG segment into a time-frequency image (scalogram) u
 ## Output
 - PNG scalogram images, resized to 224x224, stored by class.
 
+Below is an example of a balanced scalogram segment:
+
+![Balanced Scalogram Segment Example](balanced/balanced_scalogram_segment_1.png)
+
 ---
 
 *These images are ready to be used for CNN model training in the next phase.*
