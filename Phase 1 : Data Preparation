@@ -1,0 +1,45 @@
+## Phase 1: Data Preparation 
+
+1. **Collect ECG signals** (focus on `.csv` files from the MIT-BIH Arrhythmia Database)
+
+2. **Extract the MLII column** for further analysis
+
+import numpy as np
+import pandas as pd
+import os
+
+# List of training set IDs
+training_set_ids = [100,104,114,118,124,203,208,213,223,230]
+# Path to your ECG dataset folder
+path = '/content/drive/My Drive/ecg_classification_master/dataset'
+
+# Get all filenames in the directory
+try:
+    filenames = next(os.walk(path))[2]
+except StopIteration:
+    print("Directory is empty or path is incorrect.")
+    filenames = []
+
+# Find all relevant CSV files
+records = []
+if filenames:
+    filenames.sort()
+    for f in filenames:
+        filename, file_extension = os.path.splitext(f)
+        # Extract numeric part to match with training set IDs
+        numeric_part = ''.join(filter(str.isdigit, filename))
+        if numeric_part and int(numeric_part) in training_set_ids:
+            if file_extension == '.csv':
+                records.append(os.path.join(path, filename + file_extension))
+
+print(records[0] if records else "No CSV files found.")
+
+# Extract MLII column from each CSV file
+for record_file in records:
+    dataset_id = os.path.splitext(os.path.basename(record_file))[0]
+    print(f"Processing dataset {dataset_id}")
+    # Load ECG data (assuming MLII is the second column, index 1)
+    data = pd.read_csv(record_file, header=None, skiprows=1)
+    # Extract MLII column (column index 1)
+    ecg_data = data[1].apply(pd.to_numeric, errors='coerce').dropna().values
+    print(f"Extracted MLII signal from {dataset_id} with length {len(ecg_data)} samples")
